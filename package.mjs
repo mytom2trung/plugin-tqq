@@ -2,10 +2,10 @@ var __DEFINE_PACKAGE__ = (function (i) {
   "use strict";
   const t = "truyenqqq",
     y = "Truyện QQ",
-    e = "0.1.3",
+    e = "0.1.7",
     n = "Plugin nguồn Truyện QQ.",
     s = "deptrai",
-    H = "//m.ophimne.xyz/tqq",
+    H = "//m.ophimne.xyz",
     j = [];
   for (let A = 0; A < 256; ++A) j.push((A + 256).toString(16).slice(1));
   typeof crypto < "u" && crypto.randomUUID && crypto.randomUUID.bind(crypto);
@@ -26,7 +26,7 @@ var __DEFINE_PACKAGE__ = (function (i) {
       isNSFW: !1,
       language: "vi",
       support: !0,
-      updatedAt: 1699093850166,
+      updatedAt: 1700038414870,
     });
   return (
     (i.meta = u),

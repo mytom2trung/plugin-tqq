@@ -85,7 +85,11 @@ var z = (S, I, g) => ($t(S, typeof I != "symbol" ? I + "" : I, g), g);
     );
   }
   function R(t) {
-    return t.startsWith("http://") ? `https${t.slice(4)}` : t;
+    return t.startsWith("http://")
+      ? `https${t.slice(4)}`
+      : t.startsWith("//")
+      ? `https:${t}`
+      : t;
   }
   function K(t) {
     return Object.assign(self, { __DEFINE_API__: t }), t;
@@ -171,7 +175,7 @@ var z = (S, I, g) => ($t(S, typeof I != "symbol" ? I + "" : I, g), g);
     ],
     F = "truyenqqq",
     et = "Truyện QQ",
-    nt = "0.1.3",
+    nt = "0.1.7",
     at = "Plugin nguồn Truyện QQ.",
     rt = "deptrai",
     ot = "//m.ophimne.xyz",
@@ -189,7 +193,7 @@ var z = (S, I, g) => ($t(S, typeof I != "symbol" ? I + "" : I, g), g);
     isNSFW: !1,
     language: "vi",
     support: !0,
-    updatedAt: 1699093850137,
+    updatedAt: 1700038414939,
   });
   function E(t) {
     t = t.replace(/\.html$/i, "");
